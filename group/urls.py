@@ -1,6 +1,14 @@
-from django.conf.urls import url
-from django.contrib import admin
+from django.conf.urls import url, include
+import xadmin
+
+from index import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^xadmin/', xadmin.site.urls),
+    url('account/', include('apps.account.urls')),
+    url('^$', views.index, name='index'),
+    url('detail/', include('apps.detail.urls')),
+    url('car/', include('apps.car.urls')),
+    url('order/', include('apps.order.urls')),
+    url('search/', include('apps.search.urls')),
 ]
