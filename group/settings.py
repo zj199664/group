@@ -53,8 +53,7 @@ ROOT_URLCONF = 'group.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,6 +126,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # 全局登录配置
 LOGIN_URL = '/account/login/'
+
+# 指定用户模型
+AUTH_USER_MODEL = 'account.User'
 
 # ==============邮件配置=============
 # 发送邮件的服务器地址

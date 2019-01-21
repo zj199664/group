@@ -1,7 +1,7 @@
 from django.conf.urls import url, include
 import xadmin
 
-from index import views
+from apps.index import views
 
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
