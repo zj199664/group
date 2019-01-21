@@ -17,7 +17,7 @@ class Category(models.Model):
     cate_id = models.AutoField(primary_key=True, auto_created=True)
     name = models.CharField(max_length=64)
     level = models.IntegerField()
-    parent_id = models.IntegerField
+    parent_id = models.IntegerField()
     is_delete = models.BooleanField(default=False)
     create_time = models.DateTimeField(auto_now_add=True)
 
