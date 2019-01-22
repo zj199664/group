@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'group.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'group',
+        'NAME': 'lingshi',
         'USER': 'root',
         'PASSWORD': 'root',
         'PORT': '3306',
@@ -132,13 +132,13 @@ AUTH_USER_MODEL = 'account.User'
 
 # ==============邮件配置=============
 # 发送邮件的服务器地址
-EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST = 'smtp.163.com'
 # 发送邮件端口
-EMAIL_PORT = 587
+EMAIL_PORT = 25
 # 发送邮件默认的名称
-EMAIL_HOST_USER = ''
+EMAIL_HOST_USER = '13821671776@163.com'
 # 授权码
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = 'qwe123'
 # 是否启用tls安全协议
 EMAIL_USE_TLS = True
 
